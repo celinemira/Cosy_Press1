@@ -3,3 +3,10 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+api_login_check:
+  path: /api/login_check
+api_contacts:
+    path: /api/contacts
+    controller: App\Controller\ContactController::createContact
+    methods: [POST]
